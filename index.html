@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>SkinWise - Understand your skin, love yourself</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#FFC1CC",
+                        "background-light": "#fdf8f9",
+                        "background-dark": "#221014",
+                        "neutral-soft": "#f9ebed",
+                        "text-main": "#2b0d12",
+                        "text-muted": "#9a4c5a",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-text-main">
+    <!-- Header / Navigation -->
+    <header
+        class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-neutral-soft">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20">
+                <div class="flex items-center gap-2">
+                    <div class="text-primary">
+                        <span class="material-symbols-outlined text-3xl font-bold" style="">face_6</span>
+                    </div>
+                    <span class="text-xl font-black tracking-tight uppercase" style="">SkinWise</span>
+                </div>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="#features"
+                        style="">Features</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="#team" style="">Team</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="#pricing"
+                        style="">Pricing</a>
+                    <button
+                        class="bg-primary hover:bg-primary/90 text-text-main px-6 py-2 rounded-lg font-bold text-sm transition-all shadow-sm"
+                        style="">
+                        Download App Now
+                    </button>
+                </nav>
+                <button class="md:hidden text-text-main" style="">
+                    <span class="material-symbols-outlined" style="">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Section 1: Hero -->
+        <section class="relative overflow-hidden pt-12 pb-20 lg:pt-24 lg:pb-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="flex flex-col gap-8">
+                        <div class="space-y-4">
+                            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight"
+                                style="">
+                                SkinWise: Understand your skin, <span class="text-primary" style="">love yourself</span>
+                            </h1>
+                            <p class="text-lg text-text-muted leading-relaxed max-w-xl" style="">
+                                In-depth skin analysis with AI, designing a personalized care routine in just 60
+                                seconds. Leading beauty technology trends.
+                            </p>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button
+                                class="bg-primary text-text-main px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-2 hover:shadow-lg transition-all"
+                                style="">
+                                <span class="material-symbols-outlined" style="">download</span>
+                                Download App Now
+                            </button>
+                            <button
+                                class="border-2 border-primary/20 text-text-main px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary/5 transition-all"
+                                style="">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div
+                            class="absolute inset-0 bg-primary/10 rounded-full blur-3xl -z-10 transform translate-x-12 translate-y-12">
+                        </div>
+                        <div class="rounded-3xl overflow-hidden shadow-2xl bg-white p-2">
+                            <img alt="Skin Analysis App" class="w-full h-auto rounded-2xl"
+                                data-alt="Smartphone display showing AI face scanning analysis"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGvr17O6HyB71aXylh6LheR05ofgnjJaT_OutcIBj1VfWWhSMLq-AVJ-GEyYEI32KHkyZahaZTz4ltkRkcyj8GhPTUTPTL4kDTkY3jKHiVSgXbrEW7Nfwb4G24z2wd-Ol1whdkkHPPJ6TXOhB0bcYa9taaiuV41nfu4JlZg_PdtJM5pK9-OCriXzLwVPDYfvwQoxPlgliPL1hoLjC1pnVZRxUViwOYXtMYVW9ze_CETiQW36D70DYMkMPmhxvL2s8WGG3hBQGrtYcC"
+                                style="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 2: Core Features -->
+        <section class="py-20 bg-neutral-soft/30" id="features">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold mb-4" style="">Core Features</h2>
+                    <div class="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div
+                        class="bg-white dark:bg-background-dark p-8 rounded-2xl border border-neutral-soft shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-primary text-3xl"
+                                style="">center_focus_weak</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2" style="">AI Skin Scan</h3>
+                        <p class="text-text-muted" style="">Integrated Scanning &amp; Survey with artificial
+                            intelligence, identifying skin conditions instantly with high accuracy.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div
+                        class="bg-white dark:bg-background-dark p-8 rounded-2xl border border-neutral-soft shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-primary text-3xl" style="">calendar_today</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2" style="">Personalized Routine</h3>
+                        <p class="text-text-muted" style="">Morning/Night routines specifically designed based on your
+                            skin metrics and environmental living conditions.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div
+                        class="bg-white dark:bg-background-dark p-8 rounded-2xl border border-neutral-soft shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-primary text-3xl" style="">monitoring</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2" style="">Progress Tracking</h3>
+                        <p class="text-text-muted" style="">7-14-30 days tracking helps you clearly see skin changes
+                            through each stage of product use.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 3: Product Levels -->
+        <section class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-1">
+                        <h2 class="text-3xl font-bold mb-6" style="">Multi-layered Product Value</h2>
+                        <p class="text-text-muted" style="">SkinWise is not just an application, we are building a
+                            comprehensive skin care ecosystem.</p>
+                    </div>
+                    <div class="lg:col-span-2 grid sm:grid-cols-3 gap-6">
+                        <div class="p-6 bg-primary/5 rounded-2xl border-t-4 border-primary">
+                            <h4 class="font-bold text-lg mb-3" style="">Core Value</h4>
+                            <p class="text-sm text-text-muted" style="">Deep understanding of skin to care for it in the
+                                most correct and scientific way.</p>
+                        </div>
+                        <div class="p-6 bg-primary/5 rounded-2xl border-t-4 border-primary">
+                            <h4 class="font-bold text-lg mb-3" style="">Actual Product</h4>
+                            <p class="text-sm text-text-muted" style="">Smooth mobile application, accurate and
+                                convenient AI analysis.</p>
+                        </div>
+                        <div class="p-6 bg-primary/5 rounded-2xl border-t-4 border-primary">
+                            <h4 class="font-bold text-lg mb-3" style="">Augmented Product</h4>
+                            <p class="text-sm text-text-muted" style="">Sharing community, harmful ingredient alerts,
+                                and 24/7 support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 4: Our Team -->
+        <section class="py-20 bg-neutral-soft/10" id="team">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold mb-4" style="">Founding Team</h2>
+                    <p class="text-text-muted" style="">Dedicated experts in the Tech &amp; Beauty field</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Team members -->
+                    <div
+                        class="bg-white dark:bg-background-dark rounded-2xl overflow-hidden border border-neutral-soft shadow-sm group">
+                        <div class="aspect-square bg-gray-200 overflow-hidden">
+                            <img alt="CEO" class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                                data-alt="Portrait of CEO Trần Minh Hoàng"
+                                src="https://i.pinimg.com/1200x/4a/4c/29/4a4c29807499a1a8085e9bde536a570a.jpg" style="">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-lg" style="">Tran Minh Hoang</h4>
+                            <p class="text-primary font-semibold text-sm mb-3" style="">CEO &amp; Founder</p>
+                            <p class="text-sm text-text-muted" style="">Strategic expert with over 10 years of
+                                experience in the beauty industry.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white dark:bg-background-dark rounded-2xl overflow-hidden border border-neutral-soft shadow-sm group">
+                        <div class="aspect-square bg-gray-200 overflow-hidden">
+                            <img alt="COO" class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                                data-alt="Portrait of COO Đặng Thu Hường"
+                                src="https://i.pinimg.com/1200x/4a/4c/29/4a4c29807499a1a8085e9bde536a570a.jpg" style="">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-lg" style="">Dang Thu Huong</h4>
+                            <p class="text-primary font-semibold text-sm mb-3" style="">COO</p>
+                            <p class="text-sm text-text-muted" style="">Operations management, optimizing the user
+                                experience of the ecosystem.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white dark:bg-background-dark rounded-2xl overflow-hidden border border-neutral-soft shadow-sm group">
+                        <div class="aspect-square bg-gray-200 overflow-hidden">
+                            <img alt="CTO" class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                                data-alt="Portrait of CTO Lê Minh Đức"
+                                src="https://i.pinimg.com/1200x/4a/4c/29/4a4c29807499a1a8085e9bde536a570a.jpg" style="">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-lg" style="">Le Minh Duc</h4>
+                            <p class="text-primary font-semibold text-sm mb-3" style="">CTO</p>
+                            <p class="text-sm text-text-muted" style="">AI architect behind SkinWise's accurate skin
+                                scanning technology.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white dark:bg-background-dark rounded-2xl overflow-hidden border border-neutral-soft shadow-sm group">
+                        <div class="aspect-square bg-gray-200 overflow-hidden">
+                            <img alt="CMO" class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                                data-alt="Portrait of CMO Đỗ Phạm Ngọc Linh"
+                                src="https://i.pinimg.com/1200x/4a/4c/29/4a4c29807499a1a8085e9bde536a570a.jpg" style="">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-lg" style="">Do Pham Ngoc Linh</h4>
+                            <p class="text-primary font-semibold text-sm mb-3" style="">CMO</p>
+                            <p class="text-sm text-text-muted" style="">Brand orientation and connecting SkinWise to
+                                millions of women.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white dark:bg-background-dark rounded-2xl overflow-hidden border border-neutral-soft shadow-sm group">
+                        <div class="aspect-square bg-gray-200 overflow-hidden">
+                            <img alt="CPO" class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                                data-alt="Portrait of CPO Phùng Mạnh Thắng"
+                                src="https://i.pinimg.com/1200x/4a/4c/29/4a4c29807499a1a8085e9bde536a570a.jpg" style="">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-lg" style="">Phung Manh Thang</h4>
+                            <p class="text-primary font-semibold text-sm mb-3" style="">CPO</p>
+                            <p class="text-sm text-text-muted" style="">Product development based on real consumer
+                                needs.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white dark:bg-background-dark rounded-2xl overflow-hidden border border-neutral-soft shadow-sm group">
+                        <div class="aspect-square bg-gray-200 overflow-hidden">
+                            <img alt="CFO" class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                                data-alt="Portrait of CFO Nguyen Thanh Loan"
+                                src="https://i.pinimg.com/1200x/4a/4c/29/4a4c29807499a1a8085e9bde536a570a.jpg" style="">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-lg" style="">Nguyen Thanh Loan</h4>
+                            <p class="text-primary font-semibold text-sm mb-3" style="">CFO</p>
+                            <p class="text-sm text-text-muted" style="">Financial management and ensuring resources for
+                                sustainable development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 5: Persona -->
+        <section class="py-20 bg-primary/5">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div
+                    class="bg-white dark:bg-background-dark rounded-3xl p-8 lg:p-12 shadow-xl border border-primary/10 overflow-hidden relative">
+                    <div class="absolute top-0 right-0 p-8 opacity-10">
+                        <span class="material-symbols-outlined text-[120px]" style="">format_quote</span>
+                    </div>
+                    <div class="grid lg:grid-cols-2 gap-12 items-center relative z-10">
+                        <div class="order-2 lg:order-1">
+                            <div class="inline-block px-4 py-1 bg-primary/20 text-text-main rounded-full text-sm font-bold mb-6"
+                                style="">Customer Story</div>
+                            <h3 class="text-3xl font-bold mb-4" style="">Pham Thi Lan Anh, 21 years old</h3>
+                            <p class="text-text-muted mb-6 italic leading-relaxed" style="">
+                                "I used to get lost in thousands of skincare products without knowing which one was
+                                really right for me. My skin is sensitive and often irritated."
+                            </p>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-4">
+                                    <span class="material-symbols-outlined text-red-400" style="">error</span>
+                                    <div>
+                                        <p class="font-bold text-sm" style="">Problem:</p>
+                                        <p class="text-sm text-text-muted text-pretty" style="">Spent a lot of money on
+                                            unsuitable products, skin getting worse due to using the wrong routine.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <span class="material-symbols-outlined text-primary" style="">check_circle</span>
+                                    <div>
+                                        <p class="font-bold text-sm" style="">Solution from SkinWise:</p>
+                                        <p class="text-sm text-text-muted" style="">With just one scan, Lan Anh knew
+                                            exactly that her skin was 'Dehydrated Oily'. SkinWise suggested a
+                                            streamlined routine focused on recovery.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-1 lg:order-2 flex justify-center">
+                            <div
+                                class="w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-8 border-primary/10">
+                                <img alt="Persona Lan Anh" class="w-full h-full object-cover"
+                                    data-alt="Portrait of a young woman smiling"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvZyBv5Nor_-smf-5EdrZsvAWd0awNmXQjBuzfv2INau4AXxQiPyHx0GjxkJV9iw5sU9gEM4eKx9g-FruSwur9Fpq-fpVZes25zvV8QH4q6kEikFas4fFjsM8-CjAI_kqLRUXVhZ8brkPUXOZLiUAuIDspT8sOwM-xtzWacqGUiv8CYVPJXVXliqx_lhTTGj7R-PpcNavPDxna9kxsP-P5bwPmqmP3HKKva-dTmgcPvNg6K-uypzN_Gl_qi6AXQlAMVJSjHZuY3jmN"
+                                    style="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 6: Pricing -->
+        <section class="py-20" id="pricing">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold mb-4" style="">Choose Your Plan</h2>
+                    <p class="text-text-muted" style="">Start for free or upgrade for an in-depth experience</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- Freemium -->
+                    <div
+                        class="bg-white dark:bg-background-dark p-8 rounded-2xl border border-neutral-soft hover:border-primary transition-all">
+                        <h4 class="text-xl font-bold mb-2" style="">Basic Plan</h4>
+                        <p class="text-text-muted mb-6" style="">Experience essential features</p>
+                        <div class="text-3xl font-black mb-8" style="">Free</div>
+                        <ul class="space-y-4 mb-10">
+                            <li class="flex items-center gap-3 text-sm" style="">
+                                <span class="material-symbols-outlined text-primary text-lg" style="">check</span> Basic
+                                AI skin scan (3 times/month)
+                            </li>
+                            <li class="flex items-center gap-3 text-sm" style="">
+                                <span class="material-symbols-outlined text-primary text-lg" style="">check</span>
+                                Standardized morning/evening routine
+                            </li>
+                            <li class="flex items-center gap-3 text-sm opacity-40" style="">
+                                <span class="material-symbols-outlined text-lg" style="">close</span> In-depth analysis
+                                of 10+ metrics
+                            </li>
+                            <li class="flex items-center gap-3 text-sm opacity-40" style="">
+                                <span class="material-symbols-outlined text-lg" style="">close</span> 1:1 expert
+                                consultation
+                            </li>
+                        </ul>
+                        <button
+                            class="w-full border-2 border-primary text-text-main py-3 rounded-xl font-bold hover:bg-primary/5 transition-all"
+                            style="">Start Now</button>
+                    </div>
+                    <!-- Premium -->
+                    <div
+                        class="bg-white dark:bg-background-dark p-8 rounded-2xl border-2 border-primary shadow-xl relative scale-105">
+                        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-text-main text-xs font-black px-4 py-1 rounded-full uppercase tracking-widest"
+                            style="">Most Popular</div>
+                        <h4 class="text-xl font-bold mb-2" style="">Premium Plan</h4>
+                        <p class="text-text-muted mb-6" style="">Comprehensive care &amp; experts</p>
+                        <div class="text-3xl font-black mb-8" style="">$5.99 <span
+                                class="text-sm font-normal text-text-muted" style="">/month</span></div>
+                        <ul class="space-y-4 mb-10">
+                            <li class="flex items-center gap-3 text-sm" style="">
+                                <span class="material-symbols-outlined text-primary text-lg" style="">check</span>
+                                Unlimited AI skin scans
+                            </li>
+                            <li class="flex items-center gap-3 text-sm" style="">
+                                <span class="material-symbols-outlined text-primary text-lg" style="">check</span>
+                                In-depth analysis of 15+ skin metrics
+                            </li>
+                            <li class="flex items-center gap-3 text-sm" style="">
+                                <span class="material-symbols-outlined text-primary text-lg" style="">check</span>
+                                Personalized harmful ingredient alerts
+                            </li>
+                            <li class="flex items-center gap-3 text-sm" style="">
+                                <span class="material-symbols-outlined text-primary text-lg" style="">check</span>
+                                Priority 1:1 expert consultation
+                            </li>
+                        </ul>
+                        <button
+                            class="w-full bg-primary text-text-main py-4 rounded-xl font-bold hover:shadow-lg transition-all"
+                            style="">Upgrade to Premium</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-background-dark text-slate-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="text-primary">
+                            <span class="material-symbols-outlined text-3xl font-bold" style="">face_6</span>
+                        </div>
+                        <span class="text-2xl font-black tracking-tight uppercase" style="">SkinWise</span>
+                    </div>
+                    <p class="text-slate-400 max-w-sm mb-6" style="">
+                        "Trust the science, love your skin." - SkinWise is committed to providing scientific and the
+                        most personalized skin care solutions.
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors"
+                            href="#" style="">
+                            <span class="material-symbols-outlined" style="">public</span>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors"
+                            href="#" style="">
+                            <span class="material-symbols-outlined" style="">share</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6" style="">Links</h5>
+                    <ul class="space-y-4 text-slate-400">
+                        <li class="" style=""><a class="hover:text-primary transition-colors" href="#" style="">About
+                                Us</a></li>
+                        <li class="" style=""><a class="hover:text-primary transition-colors" href="#" style="">Beauty
+                                Blog</a></li>
+                        <li class="" style=""><a class="hover:text-primary transition-colors" href="#" style="">Privacy
+                                Policy</a></li>
+                        <li class="" style=""><a class="hover:text-primary transition-colors" href="#" style="">Terms of
+                                Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6" style="">Contact</h5>
+                    <ul class="space-y-4 text-slate-400">
+                        <li class="flex items-center gap-3" style="">
+                            <span class="material-symbols-outlined text-primary text-sm" style="">mail</span>
+                            hello@skinwise.com
+                        </li>
+                        <li class="flex items-center gap-3" style="">
+                            <span class="material-symbols-outlined text-primary text-sm" style="">call</span> +84 123
+                            456 789
+                        </li>
+                        <li class="flex items-center gap-3" style="">
+                            <span class="material-symbols-outlined text-primary text-sm" style="">location_on</span> Ho
+                            Chi Minh City, Vietnam
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 text-center text-slate-500 text-sm" style="">
+                © 2024 SkinWise Team. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
